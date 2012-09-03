@@ -1,0 +1,19 @@
+{
+  "author": "",
+  "name": "bem-urukov",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/urukov/bem-urukov"
+  },
+  "engines": {
+    "node": "0.6 | 0.7 | 0.8 | 0.9"
+  },
+  "dependencies": {
+    "bem": "~0.5.13",
+    "dom-js": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "private": true
+}

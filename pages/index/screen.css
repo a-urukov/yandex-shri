@@ -1,0 +1,7 @@
+.b-questions__question-header .bg {
+	background: url('icon-expander-expand.png') no-repeat;
+}
+
+.b-questions__question-header .bg.collapse {
+	background: url('icon-expander-collapse.png') no-repeat;
+}

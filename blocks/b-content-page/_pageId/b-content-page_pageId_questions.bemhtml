@@ -1,0 +1,99 @@
+block b-content-page, mod pageId questions {
+			content: [
+				{
+					elem: 'header',
+					content: 'Общие вопросы'					
+				},
+				{
+					elem: 'content',
+					content: [
+						{						
+							block: 'b-questions',
+							mods: { mode: 'inline' },
+							content: [
+								{
+									elem: 'question',
+									content: 'Фамилия, имя, отчество:'
+								},
+								{
+									elem: 'answer',
+									content: 'Уруков Андрей Викторович'
+								},
+								{
+									elem: 'question',
+									content: 'Е-mail:'
+								},
+								{
+									elem: 'answer',
+									content: 'a.urukov@yandex.ru'
+								},
+								{
+									elem: 'question',
+									content: 'Телефон:'
+								},
+								{
+									elem: 'answer',
+									content: '+7-915-12-45-739'
+								},
+								{
+									elem: 'question',
+									content: 'Год рождения:'
+								},
+								{
+									elem: 'answer',
+									content: '1987'
+								},
+								{
+									elem: 'question',
+									content: 'Город, в котором живёте:'
+								},
+								{
+									elem: 'answer',
+									content: 'Москва'
+								},
+								{
+									elem: 'question',
+									content: 'Вуз, факультет, специальность, кафедра:'
+								},
+								{
+									elem: 'answer',
+									content: 'МАИ, ф-т Системы управления, информатика и электроэнергетика, спец. 230105 Программное обеспечение вычислительной техники и автоматизированных систем, каф. Вычислительные машины, комплексы, системы и сети'
+								},
+								{
+									elem: 'question',
+									content: 'Год окончания вуза:'
+								},
+								{
+									elem: 'answer',
+									content: '2012'
+								},
+								{
+									elem: 'question',
+									content: 'На каком уровне владеете английским языком?'
+								},
+								{
+									elem: 'answer',
+									content: 'Чтение и перевод тех. документации'
+								},
+								{
+									elem: 'question',
+									content: 'Чего вы ожидаете от участия в Школе?'
+								},
+								{
+									elem: 'answer',
+									content: 'Я рассчитываю глубже изучить специфику работы фронтенд-разработчика, повысить свой профессиональный уровень и перенять опыт сотрудников Яндекса — одной из крупнейших IT компаний мира'
+								},
+								{
+									elem: 'question',
+									content: 'Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?'
+								},
+								{
+									elem: 'answer',
+									content: 'Около 3 часов в день'
+								}
+							]
+						}
+					]
+				}				
+			]		
+}

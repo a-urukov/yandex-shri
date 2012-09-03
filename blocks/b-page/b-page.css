@@ -1,0 +1,10 @@
+.b-page {
+	min-width: 1000px;
+}
+
+body * {
+	padding: 0;
+	margin: 0;
+}
+
+li { list-style: none; }

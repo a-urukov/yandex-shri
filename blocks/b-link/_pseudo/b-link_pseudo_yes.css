@@ -1,0 +1,8 @@
+.b-link_pseudo_yes {
+	text-decoration: underline !important;
+	color: #1a3dc0;
+}
+
+.b-link_pseudo_yes .b-link__inner {
+	border-bottom: 0 none !important;
+}

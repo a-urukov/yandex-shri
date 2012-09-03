@@ -1,0 +1,8 @@
+.b-menu-horiz__item_state_current .b-menu-horiz__item-selector {
+	color: black;
+	text-decoration: none !important;	
+}
+
+.b-menu-horiz__item_state_current .b-menu-horiz__item-selector:hover {
+	cursor: default !important;
+}

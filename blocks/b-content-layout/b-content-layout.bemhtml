@@ -1,0 +1,21 @@
+block b-content-layout {
+	content: [
+		{
+			block: 'b-content-page',			
+			mods:  { template: 'no', pageId: 'screen' } 			
+		},
+		{
+			block: 'b-content-page',			
+			mods:  { template: 'yes', pageId: 'tasks' }			
+		},
+		{
+			block: 'b-content-page',			
+			mods:  { template: 'yes',  pageId: 'questions' }			
+		},
+		{
+			block: 'b-content-page',			
+			mods:  { template: 'yes',  pageId: 'expirience' }			
+		}
+		
+	]
+}

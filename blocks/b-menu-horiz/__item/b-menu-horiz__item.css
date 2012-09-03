@@ -1,0 +1,9 @@
+.b-menu-horiz__item {
+	float: left;
+	margin-right: 16px;	
+}
+
+.b-menu-horiz__item .b-menu-horiz__item-selector:hover {
+	text-decoration: none !important;	
+}
+	

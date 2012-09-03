@@ -1,0 +1,303 @@
+<!DOCTYPE html><html class="i-ua_js_no i-ua_css_standard"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=edge"/><title>Школа разработки интерфейсов </title><script>;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);</script><script src="jquery.min.js"></script><script src="highlight.min.js"></script><link rel="stylesheet" href="_index.css"/><link rel="stylesheet" href="magula.css"/><link rel="stylesheet" href="screen.css"/><script src="_index.js"></script></head><body class="b-page__body b-page"><div class="b-page-layout"><div class="b-header"><div class="b-logo"><a class="b-link b-logo__link" href="#" title="yandex logo"><img class="b-icon b-logo__icon" src="logo.png" alt="yandex logo"/></a></div><h1 class="b-head-title">Школа разработки интерфейсов — Уруков Андрей</h1><div class="b-menu-horiz b-menu-horiz_layout_normal i-bem" onclick="return {&quot;b-menu-horiz&quot;:{}}"><ul class="b-menu-horiz__layout"><li class="b-menu-horiz__layout-unit b-menu-horiz__layout-unit_position_first"><div class="b-menu-horiz__item b-menu-horiz__item_state_current"><a class="b-link b-link_pseudo_yes b-menu-horiz__item-selector i-bem" onclick="return {&quot;b-link&quot;:{}}" href="tasks"><span class="b-link__inner">Технические задания</span></a></div></li><li class="b-menu-horiz__layout-unit"><div class="b-menu-horiz__item"><a class="b-link b-link_pseudo_yes b-menu-horiz__item-selector i-bem" onclick="return {&quot;b-link&quot;:{}}" href="questions"><span class="b-link__inner">Общие вопросы</span></a></div></li><li class="b-menu-horiz__layout-unit b-menu-horiz__layout-unit_position_last"><div class="b-menu-horiz__item"><a class="b-link b-link_pseudo_yes b-menu-horiz__item-selector i-bem" onclick="return {&quot;b-link&quot;:{}}" href="expirience"><span class="b-link__inner">Опыт разработки</span></a></div></li></ul></div></div><div class="b-content-layout i-bem" onclick="return {&quot;b-content-layout&quot;:{}}"><div class="b-content-page b-content-page_template_no b-content-page_pageId_screen"></div><div class="b-content-page b-content-page_template_yes b-content-page_pageId_tasks"><h2 class="b-content-page__header">Технические задания</h2><div class="b-content-page__content"><dl class="b-questions b-questions_mode_blocks i-bem" onclick="return {&quot;b-questions&quot;:{}}"><dt class="b-questions__question"><h3 class="b-questions__question-header"><span class="b-questions__title">Вопрос №1</span><span class="b-questions__bg bg"></span></h3><div class="b-questions__question-сontent">Перечислите известные вам инструменты и приёмы для отладки кода в разных браузерах. </div></dt><dd class="b-questions__answer"><div class="b-questions__paragraph">Для отладки кода в браузеров существуют следующие инструменты: <br />  
+- WebInspector для Safari и Chrome <br />
+- Firebug для Firefox <br />
+- DeveloperTools для IE </div><div class="b-questions__paragraph">Все перечисленные инструменты имеют схожий функционал. Основные возможности данных инструментальных средств опишу на примере WebInspector: <br />
+1) Просмотр и редактирование DOM модели и css <br />
+2) Просмотр Cookies и LocalStorage <br />
+3) Инструмент, позволяющий определить время загрузки и объем каждого файла страницы <br />
+4) Удобный инструмент отладки скриптов (позволяет расставлять брейкпойнты,  выполнять трассировку кода, просматривать значение переменных и стека) <br /> 
+5) Профилировщик <br />
+6) Консоль</div><div class="b-questions__paragraph">К основным приемам отладки относятся: <br />
+1) Вывод диагностических сообщений с использованием alert() и console.log() <br />
+2) Трассировка кода с использованием точек останова (breakpoint), при этом имеет смысл пошагово выполнить скрипт, посмотреть значения переменных<br />
+3) Выполнение отдельных фрагментов скрипта в консоли <br />
+4) Использование watch expression обычно в комбинации с другими пунктами</div></dd><dt class="b-questions__question"><h3 class="b-questions__question-header"><span class="b-questions__title">Вопрос №2</span><span class="b-questions__bg bg"></span></h3><div class="b-questions__question-сontent">Опишите своими словами, что происходит в браузерах при клике на ссылку yandex.ru (полнота ответа – на ваше усмотрение).</div></dt><dd class="b-questions__answer"><div class="b-questions__paragraph">1) Браузер обращается к DNS для определения ip адреса веб-сервера <br />
+2) Устанавливает соединение на 80 порту<br />
+3) Формирует и отправляет GET HTTP запрос <br />
+4) Балансировщик нагрузки определяет наименее загруженный FrontEnd сервер <br />
+5) FrontEnd сервер запрашивает BackEnd сервер <br />
+6) BackEnd сервер формирует запросы к специализированным сервисам и СУБД и возвращает ответ FrontEnd <br />
+7) На основе ответа BackEnd и кэшируемых данных FrontEnd гененирует разметку и скрипты и отправляет клиенту по HTTP <br /></div></dd><dt class="b-questions__question"><h3 class="b-questions__question-header"><span class="b-questions__title">Вопрос №3</span><span class="b-questions__bg bg"></span></h3><div class="b-questions__question-сontent">Предположим, что мы представляем автосалон по продаже японских и немецких автомобилей. У нас есть базовые классы и примеры их использования. Допишите недостающий код.</div></dt><dd class="b-questions__answer"><pre class="b-code-segment"><code class="b-code-segment__code js">/**
+ * Создает экземпляр Машины
+ * @this {Car}
+ * @param {string} manufacturer Производитель
+ * @param {string} model Модель
+ * @param {number} year Год производство
+ * если конструктор вызывается без указания текущего года, то подставлять текущий
+ */
+
+function Car(manufacturer, model, year) {
+
+    this.manufacturer = manufacturer;
+    this.model = model;
+    this.year = year;
+    if (!year) {
+        this.year = (new Date()).getFullYear();
+    }
+    else {
+        this.year = year
+    }
+}
+
+// Методы вывода информации о машине: 
+// console.log("Car: " + bmw); // Car: BMW X5 2010
+// console.log(bmw.getInfo()); // BMW X5 2010
+// console.log(bmw.getDetailedInfo()); // Производитель: BMW. Модель: X5. Год: 2010
+
+Car.prototype.getInfo = function () {
+    return this.manufacturer + " " + this.model + " " + this.year;
+}
+
+Car.prototype.getDetailedInfo = function () {
+    return "Производитель: " + this.manufacturer + ". Модель: " + this.model + ". Год: " + this.year;
+}
+
+Car.prototype.toString = function () { return this.getInfo() }
+  
+var bmw = new Car("BMW", "X5", 2010),
+    audi = new Car("Audi", "Q5", 2012),
+    toyota = new Car("Toyota", "Camry");
+  
+/**
+ * Создает экземпляр Автосалона
+ * @this {CarDealer}
+ * @param {string} name Название автосалона
+ */
+function CarDealer(name) {
+    this.name = name;
+    this.cars = [];
+}
+
+var yandex = new CarDealer("Яндекс.Авто");
+
+// метод добавления машин в автосалон. Предусмотреть возможность добавления одной машины, нескольких машин.
+CarDealer.prototype.add = function(/*...*/) {
+  	for (var i = 0; i < arguments.length; i++) {
+    	this.cars.push(arguments[i]);
+	}
+	
+	return this;
+}
+  
+yandex
+	.add(toyota)
+    .add(bmw, audi);
+    
+var JPY_COURSES = 98,
+	RUB_COURSES = 40;
+
+/**
+ * Установить цену на машину
+ * @param {string} car идентификатор машины
+ * @param {string} price стоимость
+ */
+// идентификатор машины составляется следующим образом "производитель модель год"
+// стоимость машины может быть задана в двух валютах: йена и евро.
+CarDealer.prototype.setPrice = function (car, price) {
+	var carObj = null;
+	
+  	for (var i = 0; i < this.cars.length; i++) {
+    	if (this.cars[i].toString() == car) {
+    		carObj = this.cars[i];    		
+    		break;	
+    	}		
+	}
+	
+	if (carObj == null)	{
+		
+		return this;
+	}
+	
+	if (price.charAt(0) == "€") {
+		carObj.price = price.substring(1, price.length);
+	}
+	else if (price.charAt(0) == "¥") {
+		carObj.price = Math.floor(price.substring(1, price.length) / JPY_COURSES);
+	}
+	else {
+		carObj.price = null;
+	} 
+	
+	return this;
+}
+
+yandex
+    .setPrice("BMW X5 2010", "€2000")
+    .setPrice("Audi Q5 2012", "€3000")
+    .setPrice("Toyota Camry 2012", "¥3000"); 
+
+// возвращает страну производитель
+function getCountry(car) {
+    switch (car.manufacturer.toLowerCase()) {
+        case "bmw":
+        case "audi":
+            return "Germany";
+        case "toyota":
+            return "Japan";
+    }
+}
+
+//  вывод списка автомобилей в продаже
+CarDealer.prototype.list = function () {
+	var resultStr = "";
+	
+	for (var i = 0; i < this.cars.length; i++) {
+    	resultStr += this.cars[i].toString() + ", ";
+	}
+	
+	return resultStr.substring(0, resultStr.length - 2);
+}
+
+// вывод списка автомобилей в продаже, с фильтрацией по стране производителю
+CarDealer.prototype.listByCountry = function (country) {
+	var resultStr = "";
+	
+	for (var i = 0; i < this.cars.length; i++) {
+		if (getCountry(this.cars[i]) == country){
+			resultStr += this.cars[i].toString() + ", ";	
+		}    	
+	}
+	
+	return resultStr.substring(0, resultStr.length - 2);
+}
+
+//  вывод списка автомобилей в продаже
+CarDealer.prototype.listWithPrice = function () {
+	var resultStr = "";
+	
+	for (var i = 0; i < this.cars.length; i++) {
+    	resultStr += this.cars[i].toString() + " - " + this.cars[i].price * RUB_COURSES + " руб., ";
+	}
+	
+	return resultStr.substring(0, resultStr.length - 2);
+}
+
+yandex.list(); //BMW X5 2010, Audi Q5 2012, Toyota Camry 2012
+yandex.listByCountry("Germany"); //BMW X5 2010, Audi Q5 2012
+yandex.listWithPrice(); </code></pre></dd><dt class="b-questions__question"><h3 class="b-questions__question-header"><span class="b-questions__title">Вопрос №4</span><span class="b-questions__bg bg"></span></h3><div class="b-questions__question-сontent">Найдите все текстовые файлы (*.txt), в имени которых содержится «yandex», а в содержимом — «школа фронтенд-разработки». (предполагается работа с командной строкой)</div></dt><dd class="b-questions__answer"><pre class="b-code-segment"><code class="b-code-segment__code js">#!/bin/bash
+
+if [ -n '$1' ]
+then
+	catalog=$1
+else
+	catalog='.'
+fi
+
+grep -l 'школа фронтенд-разработки' ${catalog}/*yandex*.txt</code></pre></dd><dt class="b-questions__question"><h3 class="b-questions__question-header"><span class="b-questions__title">Вопрос №5</span><span class="b-questions__bg bg"></span></h3><div class="b-questions__question-сontent">Дана программа, реализованная одновременно на Bash, Python и Perl. Программа принимает произвольное количество аргументов и печатает их количество. Нужно добавить опцию -v для verbose-режима, в котором дополнительно выводится значение каждого из аргументов.</div></dt><dd class="b-questions__answer"><pre class="b-code-segment"><code class="b-code-segment__code js">#!/usr/bin/env bash
+usage() {
+cat << EOF
+Usage: printargs.sh [OPTIONS] [ARGUMENTS]
+  Print the number of arguments.
+
+OPTIONS:
+  -h      print help message
+  -m MSG  custom message
+  -v	  verbose mode      
+
+Examples:
+  printargs.sh a b c
+  printargs.sh -m 'Arguments count: ' a b c
+  printargs.sh -h
+  printargs.sh -v
+  printargs.sh -v -m 'Print arguments in verbose mode: ' a b c
+  printargs.sh -m 'Print arguments in verbose mode: ' -v  a b c
+
+EOF
+}
+
+ISVERBMODE=0;
+
+while getopts “hvm:” OPTION
+do
+    case $OPTION in
+        h)
+            usage
+            exit 1;;            	
+	v)
+	    ISVERBMODE=1;;	    
+	m)
+            MESSAGE=$OPTARG 
+    esac
+done
+
+shift $(($OPTIND - 1))
+
+COUNT=0
+
+if [[ '$MESSAGE' != '' ]]; then
+    echo $MESSAGE
+fi
+
+for ARG in $@; do
+
+    let COUNT+=1
+
+    if [[ '$ISVERBMODE' -ne 0 ]]; then
+	echo 'Argument #' $COUNT ': ' $ARG
+    fi
+
+done
+
+echo $COUNT</code></pre><pre class="b-code-segment i-bem" onclick="return {&quot;b-code-segment&quot;:{}}"><code class="b-code-segment__code js">#!/usr/bin/env python
+
+import argparse
+
+parser = argparse.ArgumentParser(description='Print the number of arguments.')
+parser.add_argument('arguments', metavar='ARG', type=str, nargs='*', help='some arguments')
+parser.add_argument('-m', dest='message', default='', help='custom message')
+# TODO: add '-v' option for verbose mode
+
+args = parser.parse_args()
+
+count = 0
+
+for a in args.arguments:
+    # TODO: add '-v' option for verbose mode
+    # and print each argument
+    count += 1
+
+if args.message != '':
+    print(args.message)
+
+print(count)</code></pre></dd><dt class="b-questions__question"><h3 class="b-questions__question-header"><span class="b-questions__title">Вопрос №6</span><span class="b-questions__bg bg"></span></h3><div class="b-questions__question-сontent">Расскажите, в каком объёме и при каких обстоятельствах вы изучали следующие темы: языки программирования (императивные/декларативные, разные системы типов), структуры (классы, структуры данных, примитивные типы), парадигмы (события, ООП, параллельность/асинхронность, кеширование), алгоритмы (парсинг, сортировка, поиск), паттерны.</div></dt><dd class="b-questions__answer"><div class="b-questions__paragraph">Программирование стало моим увлечением более 9 лет назад, а со временем переросло в профессию и настоящее призвание. <br /> 
+											В 2005 году я занял второе место в областной олимпиаде по программированию среди техникумов. Помимо этого во время обучения в техникуме я разработал ПО тарификации преподавателей и составления учебных планов.<br />											
+											В 2008 году участвовал в конкурсе Imagine Cup от Microsoft. <br />
+											С 2009-2010 года я руководил разработкой программного комплекса "Аттестация труда сотрудников" для Института Безопасности Труда. <br />
+											В 2010 году участвовал в доработке системы "Спецделопроизводство" для Федерального агентсва по финансовому мониторингу. <br />
+											C 2011 года я руководитель стартап-проекта AirPlans</div></dd></dl></div></div><div class="b-content-page b-content-page_template_yes b-content-page_pageId_questions"><h2 class="b-content-page__header">Общие вопросы</h2><div class="b-content-page__content"><dl class="b-questions b-questions_mode_inline"><dt class="b-questions__question">Фамилия, имя, отчество:</dt><dd class="b-questions__answer">Уруков Андрей Викторович</dd><dt class="b-questions__question">Е-mail:</dt><dd class="b-questions__answer">a.urukov@yandex.ru</dd><dt class="b-questions__question">Телефон:</dt><dd class="b-questions__answer">+7-915-12-45-739</dd><dt class="b-questions__question">Год рождения:</dt><dd class="b-questions__answer">1987</dd><dt class="b-questions__question">Город, в котором живёте:</dt><dd class="b-questions__answer">Москва</dd><dt class="b-questions__question">Вуз, факультет, специальность, кафедра:</dt><dd class="b-questions__answer">МАИ, ф-т Системы управления, информатика и электроэнергетика, спец. 230105 Программное обеспечение вычислительной техники и автоматизированных систем, каф. Вычислительные машины, комплексы, системы и сети</dd><dt class="b-questions__question">Год окончания вуза:</dt><dd class="b-questions__answer">2012</dd><dt class="b-questions__question">На каком уровне владеете английским языком?</dt><dd class="b-questions__answer">Чтение и перевод тех. документации</dd><dt class="b-questions__question">Чего вы ожидаете от участия в Школе?</dt><dd class="b-questions__answer">Я рассчитываю глубже изучить специфику работы фронтенд-разработчика, повысить свой профессиональный уровень и перенять опыт сотрудников Яндекса — одной из крупнейших IT компаний мира</dd><dt class="b-questions__question">Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?</dt><dd class="b-questions__answer">Около 3 часов в день</dd></dl></div></div><div class="b-content-page b-content-page_template_yes b-content-page_pageId_expirience"><h2 class="b-content-page__header">Опыт разработки</h2><div class="b-content-page__content"><dl class="b-questions b-questions_mode_inline"><dt class="b-questions__question">Расскажите нам о вашем опыте разработки. Ничего не упускайте: это может быть как серьезный интерфейс, так и просто домашняя страничка.</dt><dd class="b-questions__answer">Система многоуровневого планирования AirPlans
+											  август 2010 г. - август 2012 г.
+AirPlans - это многоуровневая система планирования бизнес деятельности. Концептуальной основой системы является инкапсуляция всех распространенных инструментов планирования в единой среде.
+Ментор проекта Управляющий директор Фонда посевного финансирования Microsoft Гайдар Магдануров.
+Система внедрена в 5 компаниях, среди которых крупный промышленно-торговый холдинг. Команда проекта 3 человека.
+Используемые технологии: .NET 4, ASP.NET MVC 2.0, Silverlight, LINQ, NHibernate, AJAX, JQuery, BackBone.
+Применение методологии: Agile, TDD, DDD. 
+
+Еще несколько крупных .NET проектов, подробные сведения не привожу, т.к. приложения десктопные.</dd><dt class="b-questions__question">Какие языки программирования, фреймворки и технологии вы использовали? Сложились ли у вас личные предпочтения?</dt><dd class="b-questions__answer">Имею значительный опыт разработки под платформу .NET. Перечень используемых технологий в рамках платформы приводить не буду, в силу специфики курса, не рассчитанного на .NET
+Достаточно хорошо знаю JavaScript и популярные фреймворки JQuery, BackBone, Require.js.
+Умею верстать кроссбраузерные и валидные сайты с использованием CSS. Знаю основы HTML5. В ходе выполнения тестового задания изучил основы БЭМ методологии.
+Знание языков: C# (advanced), JavaScript (pre-intermediate), Delphi (intermediate), C, PHP, Python, Bash (elementary)</dd><dt class="b-questions__question">Какие редакторы и среды разработки вы использовали? Чем обычно пользуетесь?</dt><dd class="b-questions__answer">Разработка под Windows: Microsoft Visual Studio 2010, Microsoft Expression Studio, Notepad++
+Разработа под Linux: Aptana Studio 3, vim </dd><dt class="b-questions__question">С какими ОС приходилось сталкиваться? Для каких целей вы их использовали?</dt><dd class="b-questions__answer">ОС семейства Windows, включая серверные, облачная платформа Windows Azure, Linux (Ubuntu, OpenSUSE)
+Использовал для разработки, администрирования сети и как персональные ОС.</dd><dt class="b-questions__question">Приходилось ли вам пользоваться системами контроля версий? Если да, то какими? Какая из них вам нравится больше всего?</dt><dd class="b-questions__answer">Basecamp, Active Collab, Microsoft Project Plan, собственная разработка: система многоуровневого планирования AirPlans</dd><dt class="b-questions__question">Какие полезные для фронтенд-разработчика ресурсы вы используете и можете посоветовать?</dt><dd class="b-questions__answer">habrahabr.ru, stackoverflow.com, clubs.ya.ru/bem/, htmlbook.ru, softwaremaniacs.org/blog, ru.wikipedia.org, yandex.ru :)</dd><dt class="b-questions__question">Работали ли вы где-нибудь? Какие у вас были должностные обязанности? Есть ли опыт работы в команде?</dt><dd class="b-questions__answer">
+Руководитель стартап проекта AirPlans 
+GITInvest 
+август 2010 г. – сентябрь 2012 (2 года 1 месяц) Москва, Россия 
+- Формирование концепции, составление бизнес плана и ТЗ
+- Контроль сроков исполнения и распределение задач между участниками проекта.
+- Проектирование архитектуры и написание основных программных модулей. 
+
+Системный администратор 
+GITInvest 
+июнь 2009 г. – август 2010 (1 год 3 месяца) Москва, Россия 
+- Проектирование и поддержка корпоративной сети;
+- Администрирование веб-серверов, серверов баз данных, 1С и др.;
+- Поддержка пользователей;
+- Разработка и поддержка корпоративного сайта. 
+
+Веб-технолог 
+ONE2
+январь 2009 г. – июль 2009 (7 месяцев) Москва, Россия 
+- Написание клиентских скриптов на языке JavaScript (JQuery);
+- Кроссбраузерная верстка макетов;
+- Настройка CMS (Joomla, ModX, Bitrix);
+- Программирование на языке PHP. 
+									</dd></dl></div></div></div><div class="b-footer"><div class="b-footer__copyright">© 2012 Уруков Андрей</div></div></div></body></html>

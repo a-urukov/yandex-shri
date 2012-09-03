@@ -1,0 +1,11 @@
+block b-code-segment {
+	tag: 'pre',
+	content: [
+		{
+			elem: 'code',
+			cls: 'js',
+			tag: 'code',
+			content: this.ctx.code
+		}
+	]
+}

@@ -1,0 +1,18 @@
+.b-questions_mode_inline {
+	overflow: hidden;
+	line-height: 1.2em;	
+}
+
+.b-questions_mode_inline .b-questions__question {
+	float: left;
+	width: 30%;
+	font-weight: bold;
+	margin: 0 10% 16px 0;
+	clear: left;
+}
+
+.b-questions_mode_inline .b-questions__answer {
+	float: left;
+	width: 59%;	
+	margin-bottom: 16px;
+}

@@ -1,0 +1,15 @@
+block b-questions, elem question-header {
+	tag: 'h3',
+	content: [ 
+		{ 
+			elem: 'title',			
+			tag: 'span', 
+			content: this.ctx.title
+		},
+		{
+			elem: 'bg',
+			tag: 'span',
+			cls: 'bg'
+		}
+	]		
+}
